@@ -1,0 +1,19 @@
+{
+  "name": "reinvanoyen/dry-internal-api",
+  "description": "An internal API for your DRY applications",
+  "keywords": ["internal api", "api", "restful", "rest", "dry"],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Rein Van Oyen",
+      "email": "reinvanoyen@gmail.com"
+    }
+  ],
+  "require": {},
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Tnt\\InternalApi\\": "src/"
+    }
+  }
+}
