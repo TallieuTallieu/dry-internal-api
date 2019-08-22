@@ -31,7 +31,7 @@ namespace Acme\Controller;
 use Tnt\InternalApi\Exception\ApiException;
 use Tnt\InternalApi\Http\Request;
 
-class ApiController
+class PostController
 {
     public static function index(Request $request)
     {
