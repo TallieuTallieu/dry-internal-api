@@ -35,31 +35,30 @@ class ApiController
 {
 	public static function index(Request $request)
 	{
-    return [
-      [
-        'id' => 1,
-        'title' => 'My example post',
-      ],
-      [
-        'id' => 2,
-        'title' => 'Another example post',
-      ],
-    ];
+    		return [
+      			[
+				'id' => 1,
+				'title' => 'My example post',
+			],
+			[
+				'id' => 2,
+				'title' => 'Another example post',
+			],
+		];
 	}
   
 	public static function add(Request $request)
 	{
-    // Create your post
+		// Create your post
 	}
 
 	public static function delete(Request $request)
 	{
 		if ($request->data->integer('postId')) {
-      // Delete your post
-      return true;
-    }
-    
-    throw new ApiException('post_not_found');
+			// Delete your post
+			return true;
+    		}
+		throw new ApiException('post_not_found');
 	}
 }
 ```
