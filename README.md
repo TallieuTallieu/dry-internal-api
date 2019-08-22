@@ -35,7 +35,7 @@ class ApiController
 {
     public static function index(Request $request)
     {
-            return [
+        return [
             [
                 'id' => 1,
                 'title' => 'My example post',
