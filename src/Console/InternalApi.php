@@ -11,7 +11,7 @@ class InternalApi extends Command
 	{
 		return $signature
 			->setName('internal-api')
-			->addSubCommand(new ListCmd())
+			->addSubCommand(ListCmd::class)
 			;
 	}
 }

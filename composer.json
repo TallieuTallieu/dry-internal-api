@@ -9,7 +9,10 @@
       "email": "reinvanoyen@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "reinvanoyen/oak": "^1.0.0",
+    "reinvanoyen/oak-console-table": "^1.0.0"
+  },
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
