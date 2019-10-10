@@ -1,5 +1,6 @@
 {
   "name": "reinvanoyen/dry-internal-api",
+  "minimum-stability": "dev",
   "description": "An internal API for your DRY applications",
   "keywords": ["internal api", "api", "restful", "rest", "dry"],
   "type": "library",
@@ -13,7 +14,6 @@
     "reinvanoyen/oak": "^1.0.0",
     "reinvanoyen/oak-console-table": "^1.0.0"
   },
-  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "Tnt\\InternalApi\\": "src/"
