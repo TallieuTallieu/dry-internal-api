@@ -4,7 +4,7 @@
 #### Installation
 
 ```ssh
-composer require reinvanoyen/dry-internal-api
+composer require tallieutallieu/dry-internal-api
 ```
 
 #### Example usage

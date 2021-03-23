@@ -1,5 +1,5 @@
 {
-  "name": "reinvanoyen/dry-internal-api",
+  "name": "tallieutallieu/dry-internal-api",
   "minimum-stability": "dev",
   "description": "An internal API for your DRY applications",
   "keywords": ["internal api", "api", "restful", "rest", "dry"],
@@ -11,8 +11,8 @@
     }
   ],
   "require": {
-    "reinvanoyen/oak": "^1.0.0",
-    "reinvanoyen/oak-console-table": "^1.0.0"
+    "tallieutallieu/oak": "^1.0.0",
+    "tallieutallieu/oak-console-table": "^1.0.0"
   },
   "autoload": {
     "psr-4": {
