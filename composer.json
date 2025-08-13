@@ -4,14 +4,8 @@
   "description": "An internal API for your DRY applications",
   "keywords": ["internal api", "api", "restful", "rest", "dry"],
   "type": "library",
-  "authors": [
-    {
-      "name": "Rein Van Oyen",
-      "email": "reinvanoyen@gmail.com"
-    }
-  ],
   "require": {
-    "tallieutallieu/oak": "^1.0.0",
+    "tallieutallieu/oak": "^1.1.15",
     "tallieutallieu/oak-console-table": "^1.0.0"
   },
   "autoload": {
