@@ -45,7 +45,7 @@ class ListCmd extends Command
     {
         $allRoutes = Api::getRoutes();
 
-        $this->table->setHeader(['Method', 'Pattern', 'Controller',]);
+        $this->table->setHeaders(['Method', 'Pattern', 'Controller',]);
 
         $output->writeLine(
             str_pad('METHOD', 20).
