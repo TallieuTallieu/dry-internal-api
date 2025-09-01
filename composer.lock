@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78882dee8ceea8ebbb6b66a52ce8822c",
+    "content-hash": "4ad5df8cfdb00f276c7189e0106a4620",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -215,12 +215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "e3fac8b24f56113f7cb96af14958c0dd16330f54"
+                "reference": "638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/e3fac8b24f56113f7cb96af14958c0dd16330f54",
-                "reference": "e3fac8b24f56113f7cb96af14958c0dd16330f54",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d",
+                "reference": "638a154f8d4ee6a5cfa96d6a34dfbe0cffa9566d",
                 "shasum": ""
             },
             "require": {
@@ -228,7 +228,7 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20 || ^10.5.28"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25 || ^10.5.53 || ^11.5.34"
             },
             "default-branch": true,
             "type": "library",
@@ -271,7 +271,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.3"
+                "source": "https://github.com/schmittjoh/php-option/tree/1.9.4"
             },
             "funding": [
                 {
@@ -283,7 +283,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-20T21:41:07+00:00"
+            "time": "2025-08-21T11:53:16+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -570,7 +570,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -594,16 +594,16 @@
         },
         {
             "name": "tallieutallieu/oak",
-            "version": "1.1.15",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TallieuTallieu/oak.git",
-                "reference": "662b0cb133c1df152a6d254d675ffb99208665df"
+                "reference": "12b5343a7d107c6f7c5e59560be71f8d1a510adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TallieuTallieu/oak/zipball/662b0cb133c1df152a6d254d675ffb99208665df",
-                "reference": "662b0cb133c1df152a6d254d675ffb99208665df",
+                "url": "https://api.github.com/repos/TallieuTallieu/oak/zipball/12b5343a7d107c6f7c5e59560be71f8d1a510adf",
+                "reference": "12b5343a7d107c6f7c5e59560be71f8d1a510adf",
                 "shasum": ""
             },
             "require": {
@@ -636,26 +636,26 @@
                 "library"
             ],
             "support": {
-                "source": "https://github.com/TallieuTallieu/oak/tree/1.1.15"
+                "source": "https://github.com/TallieuTallieu/oak/tree/3.0.2"
             },
-            "time": "2025-07-03T13:08:32+00:00"
+            "time": "2025-07-03T13:09:59+00:00"
         },
         {
             "name": "tallieutallieu/oak-console-table",
-            "version": "1.0.4",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TallieuTallieu/oak-console-table.git",
-                "reference": "75bfec3dd6455fee139a7b05c05c814dbff730d9"
+                "reference": "ebcdf2bbf52f3cb20a32d4f5edabbdc102963279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TallieuTallieu/oak-console-table/zipball/75bfec3dd6455fee139a7b05c05c814dbff730d9",
-                "reference": "75bfec3dd6455fee139a7b05c05c814dbff730d9",
+                "url": "https://api.github.com/repos/TallieuTallieu/oak-console-table/zipball/ebcdf2bbf52f3cb20a32d4f5edabbdc102963279",
+                "reference": "ebcdf2bbf52f3cb20a32d4f5edabbdc102963279",
                 "shasum": ""
             },
             "require": {
-                "tallieutallieu/oak": "^1.0.0 | dev-php8.2"
+                "tallieutallieu/oak": "^3.0.2"
             },
             "type": "library",
             "autoload": {
@@ -666,9 +666,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "Console tables for Oak commands",
             "support": {
-                "source": "https://github.com/TallieuTallieu/oak-console-table/tree/1.0.4"
+                "source": "https://github.com/TallieuTallieu/oak-console-table/tree/3.0.0"
             },
-            "time": "2024-12-05T12:58:05+00:00"
+            "time": "2025-09-01T08:17:21+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
