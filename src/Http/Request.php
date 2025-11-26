@@ -25,13 +25,15 @@ class Request
 	 */
 	private $method;
 
+	public $parameters;
+
 	/**
 	 * Request constructor.
 	 * @param \dry\http\Request $request
 	 */
 	public function __construct(\dry\http\Request $request)
 	{
-		$this->path = $request->parameters->string('path').'/';
+		$this->path = $request->parameters->string('path') . '/';
 		$this->method = $request->method;
 
 		$methodMap = [
