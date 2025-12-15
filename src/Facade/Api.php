@@ -17,8 +17,9 @@ use Tnt\InternalApi\Router\Router;
  */
 class Api extends Facade
 {
-	protected static function getContract(): string
-	{
-		return Router::class;
-	}
+    protected static function getContract(): string
+    {
+        return Router::class;
+    }
 }
+
