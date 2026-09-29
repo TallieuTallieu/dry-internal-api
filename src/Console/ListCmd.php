@@ -37,25 +37,23 @@ class ListCmd extends Command
     {
         return $signature
             ->setName('list')
-            ->setDescription('List all registered routes on the internal API')
-            ;
+            ->setDescription('List all registered routes on the internal API');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $allRoutes = Api::getRoutes();
 
-        $this->table->setHeaders(['Method', 'Pattern', 'Controller',]);
+        $this->table->setHeaders(['Method', 'Pattern', 'Controller']);
 
         $output->writeLine(
-            str_pad('METHOD', 20).
-            str_pad('PATTERN', 60).
-            'CONTROLLER', OutputInterface::TYPE_INFO);
+            str_pad('METHOD', 20) . str_pad('PATTERN', 60) . 'CONTROLLER',
+            OutputInterface::TYPE_INFO
+        );
 
         foreach ($allRoutes as $method => $routes) {
             foreach ($routes as $pattern => $controller) {
-
-                $this->table->addRow([$method, $pattern, $controller,]);
+                $this->table->addRow([$method, $pattern, $controller]);
             }
         }
 

@@ -11,20 +11,21 @@ use Tnt\InternalApi\Router\Router as ApiRouter;
 
 class InternalApiServiceProvider extends ServiceProvider
 {
-	public function boot(ContainerInterface $app)
-	{
-		Router::register([
-			'internal-api/(?<path>.+)/' => '\\Tnt\\InternalApi\\Facade\\Api::route',
-		]);
+    public function boot(ContainerInterface $app)
+    {
+        Router::register([
+            'internal-api/(?<path>.+)/' =>
+                '\\Tnt\\InternalApi\\Facade\\Api::route',
+        ]);
 
-		Console::registerCommand(InternalApi::class);
-	}
+        Console::registerCommand(InternalApi::class);
+    }
 
-	public function register(ContainerInterface $app)
-	{
-		$app->singleton(ApiRouter::class, ApiRouter::class);
+    public function register(ContainerInterface $app)
+    {
+        $app->singleton(ApiRouter::class, ApiRouter::class);
 
-		// Console
-		$app->set(InternalApi::class, InternalApi::class);
-	}
+        // Console
+        $app->set(InternalApi::class, InternalApi::class);
+    }
 }

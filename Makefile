@@ -36,3 +36,8 @@ docker: docker-init
 docker-exec: docker
 	docker compose exec dry-internal-api-dev bash
 .PHONY: docker-exec
+
+## CODE ##
+format: docker
+	docker compose exec -T dry-internal-api-dev yarn format
+.PHONY: format

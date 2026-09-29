@@ -10,69 +10,74 @@ use Tnt\InternalApi\Exception\ApiException;
  */
 class Request
 {
-	/**
-	 * @var string $path
-	 */
-	private $path;
+    /**
+     * @var string $path
+     */
+    private $path;
 
-	/**
-	 * @var \dry\internals\http\RequestDataWrapper $data
-	 */
-	public $data;
+    /**
+     * @var \dry\internals\http\RequestDataWrapper $data
+     */
+    public $data;
 
-	/**
-	 * @var string $method
-	 */
-	private $method;
+    /**
+     * @var string $method
+     */
+    private $method;
 
-	public $parameters;
+    public $parameters;
 
-	/**
-	 * Request constructor.
-	 * @param \dry\http\Request $request
-	 */
-	public function __construct(\dry\http\Request $request)
-	{
-		$this->path = $request->parameters->string('path') . '/';
-		$this->method = $request->method;
+    /**
+     * Request constructor.
+     * @param \dry\http\Request $request
+     */
+    public function __construct(\dry\http\Request $request)
+    {
+        $this->path = $request->parameters->string('path') . '/';
+        $this->method = $request->method;
 
-		$methodMap = [
-			'POST' => 'post',
-			'GET' => 'get',
-		];
+        $methodMap = [
+            'POST' => 'post',
+            'GET' => 'get',
+        ];
 
-		if (isset($methodMap[$request->method])) {
-			$this->data = $request->{$methodMap[$request->method]};
-		}
-	}
+        if (isset($methodMap[$request->method])) {
+            $this->data = $request->{$methodMap[$request->method]};
+        }
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getMethod(): string
-	{
-		return $this->method;
-	}
+    /**
+     * @return string
+     */
+    public function getMethod(): string
+    {
+        return $this->method;
+    }
 
-	/**
-	 * @return string
-	 */
-	public function getPath(): string
-	{
-		return $this->path;
-	}
+    /**
+     * @return string
+     */
+    public function getPath(): string
+    {
+        return $this->path;
+    }
 
-	/**
-	 * @param array $required_parameters
-	 * @param array $optional_parameters
-	 * @throws ApiException
-	 */
-	public function validate($required_parameters = [], $optional_parameters = [])
-	{
-		foreach ($required_parameters as $param_name) {
-			if (! $this->data->has($param_name)) {
-				throw new ApiException('missing_required_parameter', $param_name);
-			}
-		}
-	}
+    /**
+     * @param array $required_parameters
+     * @param array $optional_parameters
+     * @throws ApiException
+     */
+    public function validate(
+        $required_parameters = [],
+        $optional_parameters = []
+    ) {
+        foreach ($required_parameters as $param_name) {
+            if (!$this->data->has($param_name)) {
+                throw new ApiException(
+                    'missing_required_parameter',
+                    $param_name
+                );
+            }
+        }
+    }
 }
