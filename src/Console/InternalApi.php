@@ -7,11 +7,10 @@ use Oak\Console\Command\Signature;
 
 class InternalApi extends Command
 {
-	protected function createSignature(Signature $signature): Signature
-	{
-		return $signature
-			->setName('internal-api')
-			->addSubCommand(ListCmd::class)
-			;
-	}
+    protected function createSignature(Signature $signature): Signature
+    {
+        return $signature
+            ->setName('internal-api')
+            ->addSubCommand(ListCmd::class);
+    }
 }

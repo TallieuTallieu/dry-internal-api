@@ -2,7 +2,13 @@
   "name": "tallieutallieu/dry-internal-api",
   "minimum-stability": "dev",
   "description": "An internal API for your DRY applications",
-  "keywords": ["internal api", "api", "restful", "rest", "dry"],
+  "keywords": [
+    "internal api",
+    "api",
+    "restful",
+    "rest",
+    "dry"
+  ],
   "type": "library",
   "require": {
     "tallieutallieu/oak": "^3.0.2",

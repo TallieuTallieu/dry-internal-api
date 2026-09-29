@@ -22,4 +22,3 @@ class Api extends Facade
         return Router::class;
     }
 }
-

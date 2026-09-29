@@ -1,4 +1,5 @@
 # dry-internal-api
+
 ### An internal API for your DRY applications
 
 #### Installation
@@ -18,9 +19,12 @@ use Tnt\InternalApi\Facade\Api;
 
 Api::get('posts/', '\\Acme\\Controller\\PostController::index');
 Api::post('posts/', '\\Acme\\Controller\\PostController::add');
-Api::delete('posts/(?<postId>\d+)/', '\\Acme\\Controller\\PostController::delete');
-
+Api::delete(
+    'posts/(?<postId>\d+)/',
+    '\\Acme\\Controller\\PostController::delete'
+);
 ```
+
 ##### Controller
 
 ```php
@@ -46,12 +50,12 @@ class PostController
             ],
         ];
     }
-    
+
     public static function add(Request $request)
     {
         // Create your post
     }
-    
+
     public static function delete(Request $request)
     {
         if ($request->data->integer('postId')) {
