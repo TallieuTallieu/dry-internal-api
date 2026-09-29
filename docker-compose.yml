@@ -12,8 +12,4 @@ services:
     ports:
       - '80'
     command:
-      [
-        'sh',
-        '-c',
-        'eval `ssh-agent -s` && ssh-add && apache2ctl -D FOREGROUND',
-      ]
+      ['sh', '-c', 'eval `ssh-agent -s` && ssh-add && apache2ctl -D FOREGROUND']
