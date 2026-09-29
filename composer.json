@@ -1,6 +1,5 @@
 {
   "name": "tallieutallieu/dry-internal-api",
-  "minimum-stability": "dev",
   "description": "An internal API for your DRY applications",
   "keywords": [
     "internal api",
